@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/result"
+    android:enabled="true"
+    app:showAsAction="collapseActionView"
+    android:icon="@drawable/ic_baseline_present"
+    android:title="Result" />
+    <item
+        android:id="@+id/navigation"
+        android:enabled="true"
+        app:showAsAction="collapseActionView"
+        android:icon="@drawable/ic_baseline_map"
+        android:title="Navigation" />
+</menu>

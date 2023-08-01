@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".a.activity.SecondActivity">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Activity"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp" />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/edNameInput">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edName"
+            android:inputType="text"
+            android:hint="Name please!"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/dobPicker"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/edAgeInput"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:hint="pick dob!"-->
+    <!--        android:textSize="18sp" />-->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edAgeInput"
+        android:layout_below="@id/edNameInput"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edAge"
+            android:inputType="number"
+            android:hint="Age!"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edAgeInput"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/edDOBInput">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dobPicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edAgeInput"
+            android:hint="pick dob"
+            android:textSize="18sp"
+            android:focusable="false"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edDOBInput"
+        android:layout_centerInParent="true"
+        android:text="save"
+        android:id="@+id/saveBtn"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saveBtn"
+        android:layout_centerInParent="true"
+        android:text="view"
+        android:id="@+id/viewBtn"/>
+</RelativeLayout>
